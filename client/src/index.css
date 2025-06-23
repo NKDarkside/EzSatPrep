@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+:root {
+  --background: hsl(48, 20%, 98%);
+  --foreground: hsl(210, 11%, 50%);
+  --muted: hsl(48, 20%, 95%);
+  --muted-foreground: hsl(210, 11%, 44%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 11%, 50%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(210, 11%, 50%);
+  --border: hsl(48, 20%, 90%);
+  --input: hsl(48, 20%, 90%);
+  --primary: hsl(145, 63%, 49%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(48, 20%, 95%);
+  --secondary-foreground: hsl(210, 11%, 10%);
+  --accent: hsl(48, 20%, 95%);
+  --accent-foreground: hsl(210, 11%, 10%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(60, 9%, 98%);
+  --ring: hsl(210, 11%, 50%);
+  --radius: 0.5rem;
+  
+  /* Custom EZ SAT colors */
+  --forest-green: hsl(145, 63%, 49%);
+  --light-beige: hsl(48, 20%, 98%);
+  --warm-gray: hsl(210, 11%, 50%);
+  --gold: hsl(35, 91%, 51%);
+  --bronze: hsl(28, 67%, 49%);
+  --silver: hsl(0, 0%, 75%);
+  --diamond: hsl(195, 100%, 85%);
+  --emerald: hsl(145, 45%, 55%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --primary: hsl(145, 63%, 49%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 5%, 84%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-source antialiased bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-nunito;
+  }
+}
+
+@layer utilities {
+  .font-nunito {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .font-source {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .text-forest-green {
+    color: var(--forest-green);
+  }
+  
+  .text-warm-gray {
+    color: var(--warm-gray);
+  }
+  
+  .text-gold {
+    color: var(--gold);
+  }
+  
+  .bg-forest-green {
+    background-color: var(--forest-green);
+  }
+  
+  .bg-light-beige {
+    background-color: var(--light-beige);
+  }
+  
+  .bg-warm-gray {
+    background-color: var(--warm-gray);
+  }
+  
+  .bg-gold {
+    background-color: var(--gold);
+  }
+  
+  .bg-bronze {
+    background-color: var(--bronze);
+  }
+  
+  .bg-silver {
+    background-color: var(--silver);
+  }
+  
+  .bg-diamond {
+    background-color: var(--diamond);
+  }
+  
+  .bg-emerald {
+    background-color: var(--emerald);
+  }
+  
+  .border-forest-green {
+    border-color: var(--forest-green);
+  }
+  
+  .hover\:bg-forest-green:hover {
+    background-color: var(--forest-green);
+  }
+  
+  .hover\:text-forest-green:hover {
+    color: var(--forest-green);
+  }
+}
